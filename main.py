@@ -1,4 +1,3 @@
-
 import telebot
 from telebot import types
 
@@ -18,7 +17,7 @@ def start(message):
 def start_message(message):
     keyboard = types.ReplyKeyboardMarkup()
     keyboard.row("/timetable", "/photo", "/info")
-    bot.send_message(message.chat.id, 'Бот имеет следующие команды:', reply_markup=keyboard)
+    bot.send_message(message.chat.id, 'Бот имеет следующие команды: /info /timetable /photo', reply_markup=keyboard)
 
 @bot.message_handler(commands=['photo'])
 def start_message(message):
