@@ -1,10 +1,4 @@
 #qweqwewqe
-import telebot
-from telebot import types
-
-token = "5111267655:AAGGoDx1-rZUY--ZHZr3S1zby3vSbwlNT94"
-
-bot = telebot.TeleBot(token)
 
 
 @bot.message_handler(commands=['start'])
